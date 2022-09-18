@@ -38,3 +38,10 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+with t1 as (
+    SELECT MIN(c21) as KC FROM tbl2
+)
+SELECT a.* FROM tbl2 a
+LEFT JOIN t1 b
+WHERE a.c21=b.KC
+;

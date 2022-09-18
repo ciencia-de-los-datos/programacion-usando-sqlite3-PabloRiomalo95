@@ -43,4 +43,11 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
-
+WITH cx AS (
+    SELECT * FROM tbl2 a
+    LEFT JOIN tbl1 b
+    ON a.K1=b.K1
+    WHERE b.c13>400
+)
+SELECT K0,avg(c21) FROM cx
+GROUP BY 1;

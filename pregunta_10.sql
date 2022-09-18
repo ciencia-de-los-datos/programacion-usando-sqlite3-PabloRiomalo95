@@ -42,3 +42,5 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+SELECT * FROM tbl0
+WHERE CAST(c02 AS INT) >=300;

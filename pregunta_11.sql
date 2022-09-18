@@ -38,3 +38,5 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+SELECT COUNT(*) FROM tbl1
+WHERE cast(strftime('%Y',c14) AS INT)=2018

@@ -43,3 +43,6 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+SELECT * FROM tbl1
+WHERE TRIM(K0) NOT IN ('A','B') AND CAST(c13 AS INT) NOT IN (200,900)
+ORDER BY c14;
